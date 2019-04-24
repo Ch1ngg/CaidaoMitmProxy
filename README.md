@@ -21,3 +21,9 @@
 ## 注意事项
 需要替换 20160622 版本的 caidao.conf 文件。文件在 caidaoconf 目录。
 没有测试是否支持HTTPS
+
+## 参考
+
+>https://xz.aliyun.com/t/2739
+>
+>https://github.com/ekgg/Caidao-AES-Version
