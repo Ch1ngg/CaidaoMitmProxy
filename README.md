@@ -24,8 +24,8 @@ Linux：mitmproxy -k -s 插件路径
 - [×] ASP
 
 ## 注意事项
-需要替换 20160622 版本的 caidao.conf 文件。文件在 caidaoconf 目录。
-HTTP代理中转没有测试是否支持HTTPS
+1. caidao.conf 文件在 caidaoconf 目录
+2. HTTP代理中转没有测试是否支持HTTPS
 
 ## 参考
 
