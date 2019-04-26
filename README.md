@@ -1,6 +1,5 @@
 # CaidaoMitmProxy
 基于HTTP代理中转菜刀过WAF,基于菜刀20160622版本修改和测试。理论上是支持低版本菜刀。本人没测试希望大家来帮忙测试下。
-ASPX没思路进行编写，望大神们能写出来。
 ## 安装
 * pip[3] install pydes
 * pip[3] install mitmproxy
