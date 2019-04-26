@@ -6,7 +6,7 @@
 
 ## 使用
 
-1. 替换 caidao.conf 文件
+1. 替换 caidao.conf 文件(使用 PHP DES 加密脚本的时候才需要替换)
 2. 将支持 DES 加密的 Webshell 上传到服务器的 Web目录
 3. 运行下列代码开启代理中转(使用 -p 可以自定以端口)
 ```c
