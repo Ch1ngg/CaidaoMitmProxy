@@ -307,7 +307,7 @@
 	{	 
 	   	postData=(String)enu.nextElement(); 
 	}
-	String allData = desDecrypt(jdkBase64Decoder(postData), key);
+	String allData = desDecrypt(jdkBase64Decoder(URLDecoder.decode(postData)), key);
 	//out.print(allData);
 	String[] sp = splitParameter(allData);
 	if(sp.length <= 2){
