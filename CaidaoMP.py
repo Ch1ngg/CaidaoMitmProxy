@@ -3,6 +3,7 @@
 
 import base64
 import mitmproxy.http
+from mitmproxy import ctx
 import pyDes
 import random
 from urllib.parse import quote
@@ -34,14 +35,13 @@ class Counter:
 
     def request(self, flow: mitmproxy.http.HTTPFlow):
 
-        print(key)
-        print("first req:" + str(flow.request.content))
+        ctx.log.info("Original Request Data: %s" % str(flow.request.content))
         flow.request.content = bytes(quote(str(encrypt_str(key.encode(encoding="utf-8"), flow.request.content),encoding="UTF-8")),encoding="UTF-8")
-        print("req:" + str(flow.request.content))
+        ctx.log.info("Encrypt Request Data: %s" % str(flow.request.content))
 
     def response(self,flow: mitmproxy.http.HTTPFlow):
         flow.response.content = decrypt_str(key.encode(encoding="utf-8"),flow.response.content)
-        print("decrypt resp:" + str(flow.response.content,encoding="utf-8"))
+        ctx.log.info("Decrypt Response Data: %s" % str(flow.request.content))
 
 addons = [
     Counter()

@@ -21,7 +21,7 @@ Linux：mitmproxy -k -s 插件路径
 ## Shell
 - [√] PHP
 - [√] JSP
-- [×] ASPX
+- [√] ASPX
 - [×] ASP
 
 ## 注意事项
