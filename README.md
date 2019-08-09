@@ -32,3 +32,5 @@ Linux：mitmproxy -k -s 插件路径
 >https://xz.aliyun.com/t/2739
 >
 >https://github.com/ekgg/Caidao-AES-Version
+## 法律
+该项目仅供学习和测试，遵守《中华人民共和国网络安全法》。禁止使用该项目进行违法操作，一切违法操作本人不承担任何法律责任！
